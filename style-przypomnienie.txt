@@ -1,0 +1,17 @@
+text-align: left/right/center/justify	/*położenie tekstu: po lewej/po prawej/po środku/wyjustowany*/
+font-size: rozmiar 		- wielkość czcionki
+			xx-small	- najmniejsza
+			x-small		- bardzo mała
+			small		- mała
+			medium		- średnia
+			large		- duża
+			x-large		- bardzo duża
+			xx-large	- największa
+			
+color: kolor			-kolor
+		można wpisać nazwę lub numer
+		
+font-family: rodzaj		- rodzaj czcionki
+		jeżeli użytkownik nie posiada czcionki u siebie w bazie zostanie wyświetlona domyślna
+		
+background-color: kolor	- kolor tła
