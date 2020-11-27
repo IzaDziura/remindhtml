@@ -15,3 +15,5 @@ font-family: rodzaj		- rodzaj czcionki
 		jeżeli użytkownik nie posiada czcionki u siebie w bazie zostanie wyświetlona domyślna
 		
 background-color: kolor	- kolor tła
+
+<h1><h2><h3><h4><h5><h6> - domyślne nagłówki

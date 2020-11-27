@@ -1,33 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang = "pl"> <!--język strony-->
 <head>
 	<meta charset="UTF-8">  <!--wyświetlanie polskich znaków -->
+	<meta name = "description" content = "Strona służy wyłącznie do przypomnienia sobie 
+		języka html i css">  <!--opis wyswietlający się w wyszukiwarce-->
+	<meta name = "keywords" content = "powtórka, lekcje, html, css"> <!--wyrazy kluczowe dla wyszukiwarek-->
+	<meta name = "author" content = "Iza Dziura"> <!--autor strony-->
+	<meta name = "creator" content = "Samodzielność"> <!--organizacja-->
+	<meta name = "publisher" content = "Metafizyka"> <!--wydawca-->	
 	<title>Przypomnienie</title> <!-- napis na zakładce (tab) -->
 	<link rel="stylesheet" type="text/css" href="style-przypomnienie.css">
+	<link rel = "shortcut icon" href = "image/mini.png"> <!--miniaturka w zakładce-->
 	<script></script>
 </head>
 <body style = "background-color: blue">
-	<p>Witamy!</p> <!--akapit-->
-	<p><b>Tekst pogrubiony</b> </P><!--pogrubienie tekstu-->
-	<p><i>Tekst pochylony</i> </p><!--pochylenie tekstu-->
-	<p><u>Tekst podkreślony</u> </p><!--podkreślenie tekstu-->
-	<p>Lorem ipsum <br> dolor sit amet</P> <!--złamanie lini-->
-	<p style="text-align: center"><span style = "font-size: large; color: red; background-color: yellow"><b><i><u>
-		Szaleństwo!!!!!!!!!!!!!!!!!<u/></i></b>
-	</p>
-	<p>
-		<div style="text-align: center"> <!--wyśrodkowanie zdjęcia-->
-			<img src = "image/knight.jpg"> <!--wgranie zdjęcia z dysku lokalnego-->
-		</div>
-	</p>
-	<p>
-		<div style = "text-align: center">
-			<a href = "https://www.wp.pl" >link</a> <!--link-->
-		</div>
-	</p>
-	<p style = "text-align: center">
-		<a href = "https://onet.pl"><img src = "image/knight2.jpg"></a> <!--link obrazkowy-->
-	</p>
+	<div>
+		<p id = "start">Witamy!</p> <!--akapit--> <!--id - zdefiniowanie kotwicy-->
+		<p><b>Tekst pogrubiony</b> </P> <!--pogrubienie tekstu-->
+		<p><i>Tekst pochylony</i> </p> <!--pochylenie tekstu-->
+		<p><u>Tekst podkreślony</u> </p> <!--podkreślenie tekstu-->
+		<p><s>Tekst przekreślony</s></p> <!--przekreślenie tekstu-->
+		<p><em>Tekst wyróżniony</em></p> <!--emfaza, wyróżnienie tekstu-->
+		<p><strong>Tekst o wysokiej ważności</strong></p> <!--wysoka ważność tekstu-->
+		<p>Lorem ipsum <br> dolor sit amet</P> <!--złamanie lini-->
+		<p>Indeks <sub>dolny</sub></p>
+		<p>Indeks <sup>górny</sup></p>
+		<p style="text-align: center"><span style = "font-size: large; color: red; background-color: yellow"><b><i><u>
+			Szaleństwo!!!!!!!!!!!!!!!!!</u></i></b>
+		</p>
+	
+		<p>
+			<h1 title="Muahahahahahaha">Nagłówek 1</h1> <!--opis do nagłówka-->
+			<h2>Nagłówek 2</h2>
+			<h3>Nagłówek 3</h3>
+			<h4>Nagłówek 4</h4>
+			<h5>Nagłówek 5</h5>
+			<h6>Nagłówek 6</h6>
+		</p>
+	
+		<p>
+			<div style="text-align: center"> <!--wyśrodkowanie zdjęcia-->
+				<img src = "image/knight.jpg" alt="Tekst zamiast obrazka"> <!--wgranie zdjęcia z dysku lokalnego-->
+			</div>
+		</p>
+	</div>
+	<div>
+		<p>
+			<div style = "text-align: center">
+				<a href = "https://www.wp.pl" >link</a> <!--link-->
+			</div>
+		</p>
+	
+		<p style = "text-align: center">
+			<a href = "https://onet.pl"><img src = "image/knight2.jpg"></a> <!--link obrazkowy-->
+		</p>
+	</div>
+	<div>	<!--tabele-->
+		<table>
+		<caption>Nagłówek w wierszu i poziomo połączone komórki</caption>
+			<tr> <!--wiersz-->
+				<th>Imię</th>  <!--nagłówek w wierszu-->
+				<th>Nazwisko</th> <!--kolumna-->
+				<th>Wiek</th>
+				<th>Ulubiona książka</th>
+			</tr>
+			<tr> <!--wiersz-->
+				<td colspan="2">Dwie_komórki</td> <!--połączone komórki-->
+				<td>36</td>
+				<td>Władca pierścieni</td>
+			</tr>
+			<tr> <!--wiersz-->
+				<td>Andrzej</td>  <!--kolumna-->
+				<td>Kowalski</td>
+				<td>69</td>
+				<td>Silmarillion</td>
+			</tr>
+		</table>
+		<hr>
+		<table>
+		<caption>Nagłówek w kolumnie i pionowo połączone komórki</caption>
+			<tr> <!--wiersz-->
+				<th>Imię</th>  <!--nagłówek w kolumnie-->
+				<td>Nazwisko</td>
+				<td>Wiek</td>
+				<td>Ulubiona książka</td>
+			</tr>
+			<tr> <!--wiersz-->
+				<th rowspan="2">Dwie_komórki</th>  
+				<td>Kowalska</td> <!--kolumna-->
+				<td>36</td>
+				<td>Władca pierścieni</td>
+			</tr>
+			<tr> <!--wiersz-->  
+				<td>Kowalski</td> <!--kolumna-->
+				<td>69</td>
+				<td>Silmarillion</td>
+			</tr>
+		</table>
+		<hr>
+		<table>
+		<caption>Nagłówek mieszany + stopka + nagłówek</caption>
+			<thead style="background-color: yellow"> <!--nagłówek tabeli-->
+				<tr> <!--wiersz-->
+					<th>Imię</th>  <!--nagłówek mieszany-->
+					<th>Nazwisko</th>
+					<th>Wiek</th>
+					<th>Ulubiona książka</th>
+				</tr>
+			</thead>
+			<tbody style="background-color: green"> <!--ciało tabeli-->
+				<tr> <!--wiersz-->
+					<th>Anna</th>  <!--kolumna-->
+					<td>Kowalska</td>
+					<td>36</td>
+					<td>Władca pierścieni</td>
+				</tr>
+				<tr> <!--wiersz-->
+					<th>Andrzej</th>  <!--kolumna-->
+					<td>Kowalski</td>
+					<td>69</td>
+					<td>Silmarillion</td>
+				</tr>
+			</tbody>
+			<tfood> <!--stopka tabeli-->
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</tfood>
+		</table>
+		<hr>
+		<table>
+		<caption>Grupowanie kolumn</caption>
+			<colgroup style="background-color: red"></colgroup>
+				<tr> 
+					<th>Imię</th>  
+					<th>Nazwisko</th>
+					<th>Wiek</th>
+					<th>Ulubiona książka</th>
+				</tr>
+			<colgroup span ="2" style="background-color: green"></colgroup>
+				<tr> 
+					<th>Anna</th>
+					<td>Kowalska</td>
+					<td>36</td>
+					<td>Władca pierścieni</td>
+				</tr>
+				<tr>
+					<th>Andrzej</th>
+					<td>Kowalski</td>
+					<td>69</td>
+					<td>Silmarillion</td>
+				</tr>
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+		</table>
+	</div>
+	
+	
+	
+	
+	<div>
+		<hr> <!--pozioma linia odzielająca akapity-->
+		<address>example@wp.pl</address>
+		<a href="#start">Powrót</a> <!--odsyłacz-->
+	</div>
+	
 	
 </body>
 
