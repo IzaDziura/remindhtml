@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang = "pl"> <!--język strony-->
+<head>
+	<meta charset="UTF-8">  <!--wyświetlanie polskich znaków -->
+	<meta name = "description" content = "Strona służy wyłącznie do przypomnienia sobie 
+		języka html i css">  <!--opis wyswietlający się w wyszukiwarce-->
+	<meta name = "keywords" content = "powtórka, lekcje, html, css"> <!--wyrazy kluczowe dla wyszukiwarek-->
+	<meta name = "author" content = "Iza Dziura"> <!--autor strony-->
+	<meta name = "creator" content = "Samodzielność"> <!--organizacja-->
+	<meta name = "publisher" content = "Metafizyka"> <!--wydawca-->	
+	<title>Przypomnienie css</title> <!-- napis na zakładce (tab) -->
+	<link rel="stylesheet" type="text/css" href="style-przypomnienie.css">
+	<link rel = "shortcut icon" href = "image/mini.png"> <!--miniaturka w zakładce-->
+	<script></script>
+</head>
+<body>
+	<p id = "start">Witamy!</p> 
+	<p class="bold">Tekst pogrubiony </P> 
+	<p class="italic">Tekst pochylony</p> 
+	<p class="underline">Tekst podkreślony </p> 
+	<p class="line-through">Tekst przekreślony</p>
+	<p class="overline">Linia nad tekstem</p> 
+	<p>Indeks <span class="sub"> dolny </span></p>
+	<p>Indeks <span class="sup">górny</span></p>
+	<p class="crazy underline" >
+		Szaleństwo!!!!!!!!!!!!!!!!!
+	</p>	
+
+	<p>
+		<h1 title="Muahahahahahaha">Nagłówek 1</h1>
+		<h2>Nagłówek 2</h2>
+		<h3>Nagłówek 3</h3>
+		<h4>Nagłówek 4</h4>
+		<h5>Nagłówek 5</h5>
+		<h6>Nagłówek 6</h6>
+	</p>
+
+	<p>
+		<img src = "image/knight.jpg" alt="Tekst zamiast obrazka">
+	</p>
+
+	<p>
+		<a href = "https://www.wp.pl"  target = "_blank">link</a>
+	</p>
+
+	<p>
+		<a href = "https://onet.pl"><img src = "image/knight2.jpg"></a> <!--link obrazkowy-->
+	</p>
+	
+	<div>	<!--tabele-->
+		<table>
+		<caption>Nagłówek w wierszu i poziomo połączone komórki</caption>
+			<tr>
+				<th>Imię</th>
+				<th>Nazwisko</th>
+				<th>Wiek</th>
+				<th>Ulubiona książka</th>
+			</tr>
+			<tr>
+				<td colspan="2">Dwie_komórki</td>
+				<td>36</td>
+				<td>Władca pierścieni</td>
+			</tr>
+			<tr>
+				<td>Andrzej</td>
+				<td>Kowalski</td>
+				<td>69</td>
+				<td>Silmarillion</td>
+			</tr>
+		</table>
+		<hr>
+		<table>
+		<caption>Nagłówek w kolumnie i pionowo połączone komórki</caption>
+			<tr>
+				<th>Imię</th>
+				<td>Nazwisko</td>
+				<td>Wiek</td>
+				<td>Ulubiona książka</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Dwie_komórki</th>  
+				<td>Kowalska</td>
+				<td>36</td>
+				<td>Władca pierścieni</td>
+			</tr>
+			<tr>
+				<td>Kowalski</td>
+				<td>69</td>
+				<td>Silmarillion</td>
+			</tr>
+		</table>
+		<hr>
+		<table>
+		<caption>Nagłówek mieszany + stopka + nagłówek</caption>
+			<thead class="head-style"> 
+				<tr> 
+					<th>Imię</th> 
+					<th>Nazwisko</th>
+					<th>Wiek</th>
+					<th>Ulubiona książka</th>
+				</tr>
+			</thead>
+			<tbody class="body-style"> 
+				<tr> 
+					<th>Anna</th> 
+					<td>Kowalska</td>
+					<td>36</td>
+					<td>Władca pierścieni</td>
+				</tr>
+				<tr> 
+					<th>Andrzej</th> 
+					<td>Kowalski</td>
+					<td>69</td>
+					<td>Silmarillion</td>
+				</tr>
+			</tbody>
+			<tfood> 
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</tfood>
+		</table>
+		<hr>
+		<table>
+		<caption>Grupowanie kolumn</caption>
+			<colgroup id="style1"></colgroup>
+				<tr> 
+					<th>Imię</th>  
+					<th>Nazwisko</th>
+					<th>Wiek</th>
+					<th>Ulubiona książka</th>
+				</tr>
+			<colgroup id="style2" span ="2"></colgroup>
+				<tr> 
+					<th>Anna</th>
+					<td>Kowalska</td>
+					<td>36</td>
+					<td>Władca pierścieni</td>
+				</tr>
+				<tr>
+					<th>Andrzej</th>
+					<td>Kowalski</td>
+					<td>69</td>
+					<td>Silmarillion</td>
+				</tr>
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+		</table>
+	</div>
+
+	<hr> 
+	<address>example@wp.pl</address>
+	<a href="#start" id="link">Powrót</a> 
+		
+</body>
+
+</html>
